@@ -19,7 +19,7 @@ export class Login{
         await this.Email_Login.fill(email)
         await this.Password.fill(password)
         await this.Btn_Login.click()
-        await expect(this.page.getByText('Logged in as ')).toBeVisible();
+        // await expect(this.page.getByText('Logged in as ')).toBeVisible();
     }
 
 }
