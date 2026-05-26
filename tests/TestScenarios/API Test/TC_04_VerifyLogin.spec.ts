@@ -12,5 +12,5 @@ test ("VerifyLogin", async ({request})=>{
     const responseBody = await response.json();
     console.log(responseBody);
     expect(responseBody.responseCode).toBe(200);
-    expect(responseBody.message).toBe('User exists!');
+    expect(responseBody.message).toBe('User exists!')
 })
