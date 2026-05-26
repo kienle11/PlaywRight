@@ -6,5 +6,5 @@ test ("PostAllProducts", async ({request})=>{
     const responseBody = await response.json();
     console.log(responseBody);
     expect(responseBody.responseCode).toBe(405);
-     expect(responseBody.message).toBe('This request method is not supported.');
+    expect(responseBody.message).toBe('This request method is not supported.');
 })
